@@ -21,15 +21,15 @@ It uses **sound prompts** and **text-to-speech (TTS)** to guide users through ea
 
 ## 🖼️ Screenshots/Diagrams
 
-![image.png](attachment:bf8239fb-6313-4f77-86ab-54fc56bd6acc:image.png)
+![image](https://github.com/user-attachments/assets/e20c6bb6-0ad8-4e69-b2d4-7d91f9226134)
 
-![image.png](attachment:e385ca5b-893b-4efc-b203-5514a07fe2a5:image.png)
+![image](https://github.com/user-attachments/assets/fd659823-a328-43e6-a123-d5e5d1eb395b)
 
-![image.png](attachment:e03e2eae-4ab4-41fe-9763-a6c549becc39:image.png)
+![image](https://github.com/user-attachments/assets/3f2c936b-0f50-497a-8cd3-83d0ddb32f17)
 
-![image.png](attachment:796f9ffe-1927-4f2d-9c93-5cf7eeb92667:image.png)
+![image](https://github.com/user-attachments/assets/4bec201c-e2a2-4597-992c-5a7ae46587ec)
 
-![image.png](attachment:21c60dce-67cf-4c08-9c36-bbd87190e286:image.png)
+![image](https://github.com/user-attachments/assets/5729bb87-2b9e-46d8-a5bd-901d1c003431)
 
 
 ## 🛠️ How to Install/Run
