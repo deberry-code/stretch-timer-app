@@ -21,16 +21,16 @@ It uses **sound prompts** and **text-to-speech (TTS)** to guide users through ea
 
 ## 🖼️ Screenshots/Diagrams
 
+![image](https://github.com/user-attachments/assets/e20c6bb6-0ad8-4e69-b2d4-7d91f9226134)
 
-```plaintext
-➜ python3.12 TIMERAPP.py
-What would you like to stretch? (options: torso, hips, arms, pointe, etc.)
-...
-Ready to begin? Press any key:
-Do Hamstring Forward Fold Right.
-[Audio Plays]
-...
-Sequence completed. Congratulations!
+![image](https://github.com/user-attachments/assets/fd659823-a328-43e6-a123-d5e5d1eb395b)
+
+![image](https://github.com/user-attachments/assets/3f2c936b-0f50-497a-8cd3-83d0ddb32f17)
+
+![image](https://github.com/user-attachments/assets/4bec201c-e2a2-4597-992c-5a7ae46587ec)
+
+![image](https://github.com/user-attachments/assets/5729bb87-2b9e-46d8-a5bd-901d1c003431)
+
 
 ## 🛠️ How to Install/Run
 
