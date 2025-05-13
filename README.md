@@ -3,11 +3,13 @@
 **Stretch Timer App** is a customizable sequence timer for stretches, specially built for dancers, athletes, and anyone who wants guided stretching sessions.
 It uses **sound prompts** and **text-to-speech (TTS)** to guide users through each stretch.
 
-## What the project does
-- Allows users to create a personalized sequence of stretches.
-- Optionally adjusts durations for each stretch.
-- Guides users with audio instructions and relaxing sounds.
-- Provides option to start from midway through a session.
+## Features
+- Create full custom stretch sequences (hips, torso, arms, pointe, reclining, deep stretches, etc.)
+- Adjust stretch durations manually
+- Mid-session starting option
+- Text-to-Speech (TTS) audio guidance
+- Alternating relaxing harp sound notifications
+- Midpoint encouragement ("You're halfway done!")
 
 ---
 
@@ -15,7 +17,6 @@ It uses **sound prompts** and **text-to-speech (TTS)** to guide users through ea
 - **Python 3.12**
 - **pygame** (for sound playing)
 - **gTTS** (Google Text-to-Speech API)
-- **IPython.display** (optional visual support)
 
 ---
 
@@ -63,17 +64,6 @@ pip install pygame gTTS
 python TIMERAPP.py
 
 ```
-
----
-
-## Features
-
-- Create full custom stretch sequences (hips, torso, arms, pointe, reclining, deep stretches, etc.)
-- Adjust stretch durations manually
-- Mid-session starting option
-- Text-to-Speech (TTS) audio guidance
-- Alternating harp sound notifications
-- Midpoint encouragement ("You're halfway done!")
 
 ---
 
