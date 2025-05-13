@@ -1,6 +1,5 @@
 import time
 from gtts import gTTS
-import IPython.display
 import pygame
 import os
 # from PIL import Image
