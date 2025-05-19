@@ -1,1 +1,4 @@
-myenv
+myvenv
+.DS_Store
+.vscode/settings.json
+temp.mp3

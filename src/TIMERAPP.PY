@@ -1,22 +1,14 @@
 import time
 from gtts import gTTS
-import IPython.display
+
 import pygame
 import os
-# from PIL import Image
-# import keyboard
 import random
-
-# TO TEST: when you open new terminal paste
-#  python3 -m venv myvenv -> dont need to run again but that created the venv
-#  source myvenv/bin/activate -> will transfer you to the venv
-# terminal has to say (myvenv) at the beginning. if it doesn't say that source myvenv/bin/activate
-#TO RUN THE CODE: python3.12  TIMERAPP.py 
 
 pygame.mixer.init()
 
-harpup = '/Users/hayleydeberry/Desktop/PROJECT/SOUNDS/HARP UP.mp3'
-harpdown='/Users/hayleydeberry/Desktop/PROJECT/SOUNDS/HARP UP.mp3'
+harpup = '/Users/hayleydeberry/Desktop/PROJECT/TIMER PROJECT/assets/HARP UP.mp3'
+harpdown='/Users/hayleydeberry/Desktop/PROJECT/TIMER PROJECT/assets/HARP DOWN.mp3'
 
 def playsound(filepath):
     sound = pygame.mixer.Sound(filepath)
@@ -42,7 +34,6 @@ class Stretch:
     self.filepath=filepath
     self.defaulttime=defaulttime
     self.tag2=tag2
-    # stretchdict[self.name]=self.name, self.stretchid, self.tag, self.lr
     if self.tag=="reclining" or self.tag2=="reclining":
       self.defaulttime=90
 
@@ -256,7 +247,7 @@ def buildfullbody():
   ss.update({savasana.name: savasana.defaulttime})
   return ss
 
-def buildsequence(): #WORKING OK
+def buildsequence():
   sequencedict={}
   essentialsdict={}
   optionslist={"torso": buildtorso(), "hips": buildhips(),
@@ -335,9 +326,8 @@ def startmidway():
     # return updatedsequence
   return sequencedict
 
-##IF STRETCH HAS L AND R, MODIFY BOTH. ASK., BC SOMETIMES L
-#ALSO MODIFY TO ADJUST DEFAULT STRETCH DURATION
-def setdurations(): #not gonna lie chatgpt did this whole thing, enumerate fucked me upppp
+
+def setdurations():
   sequencedict=startmidway()
   userduration=storeduration()
   print("Here is your sequence:")
@@ -349,8 +339,7 @@ def setdurations(): #not gonna lie chatgpt did this whole thing, enumerate fucke
       sequencedict[key] = userduration
     print(sequencedict)
   return sequencedict
-    # for index, (key, value) in enumerate(sequencedict.items()):
-    #   print(f'{index + 1}. {key}: {userduration}')
+
 
 def modifydurations():
  sequencedict=setdurations()
@@ -373,7 +362,7 @@ def modifydurations():
         return sequencedict
     except ValueError:
       print("Invalid input. Please enter a valid index or 0 to finish.\n")
-      # return sequencedict
+
  return sequencedict  
 
 def runtimer():
@@ -392,11 +381,10 @@ def runtimer():
   remaining=len(totallength)
   starting=f'This series contains {len(totallength)} total intervals and will last {displaylength}.'
   speak(starting)
-  currentsound = harpup  # Start with the first sound
+  currentsound = harpup
   for key, value in sequencedict.items():
     if remaining!=len(totallength):
       print(f'{completed} intervals completed; {remaining} intervals remaining.\n')
-    # keyboard._listener("space")
     instruction= f"Do {key}."
     print(instruction)
     speak(instruction)
