@@ -1,6 +1,9 @@
 import time
 from gtts import gTTS
+<<<<<<< HEAD
 
+=======
+>>>>>>> bb5c2d565bc916ede20122dd7bc350b1063afa8b
 import pygame
 import os
 import random
